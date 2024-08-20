@@ -17,8 +17,11 @@ body{
 #app {
     background-color: white;
     padding: 20px;
-    border-radius: 5px;
+    border-radius: 15px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+   
+
+
 }
 /* estilos para el formulario */
 form { 
@@ -66,3 +69,76 @@ li.completed {
     
 }
 
+
+/* estilos para el boton de borrar tareas completadas */
+button {
+    background-color: transparent;
+    color: #0d0d0e;
+    padding: 10px 20px;
+    border: 2px solid #c37dc3;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    position: relative;
+    overflow: hidden;
+    transition: color 0.4s;
+}
+button::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background-color: #974481;
+    transition: all 0.4s ease;
+    border-radius: 50%;
+    z-index: 0;
+    transform: translate(-50%, -50%) scale(0);
+}
+button:hover::before {
+    transform: translate(-50%, -50%) scale(1);
+}
+button:hover {
+    color: rgb(139, 206, 117);
+}
+button span {
+    position: relative;
+    z-index: 1;
+}
+
+body{
+
+	background:
+
+		linear-gradient(324deg, #68b7e8 4%, transparent 4%) -70px 43px,
+
+		linear-gradient(36deg, #68b7e8 4%, transparent 4%) 30px 43px,
+
+		linear-gradient(72deg, rgb(210, 81, 137) 8.5%, transparent 8.5%) 30px 43px,
+
+		linear-gradient(288deg, #fff 8.5%, transparent 8.5%) -70px 43px,
+
+		linear-gradient(216deg, #fff 7.5%, transparent 7.5%) -70px 23px,
+
+		linear-gradient(144deg, #fff 7.5%, transparent 7.5%) 30px 23px,
+
+		
+
+		linear-gradient(324deg, #68b7e8 4%, transparent 4%) -20px 93px,
+
+		linear-gradient(36deg, #68b7e8 4%, transparent 4%) 80px 93px,
+
+		linear-gradient(72deg, #fff 8.5%, transparent 8.5%) 80px 93px,
+
+		linear-gradient(288deg, #fff 8.5%, transparent 8.5%) -20px 93px,
+
+		linear-gradient(216deg, #fff 7.5%, transparent 7.5%) -20px 73px,
+
+		linear-gradient(144deg, #fff 7.5%, transparent 7.5%) 80px 73px; 
+
+	background-size:100px 100px;
+
+	background-color:#dc146b;
+
+}
